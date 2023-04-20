@@ -9,3 +9,4 @@ shuffled=$(printf '%s\n' "${ports[@]}" | shuf)
 # Select the first element of the shuffled list
 port=$(echo "$shuffled" | head -n 1)
 
+echo "Random port: $port"
